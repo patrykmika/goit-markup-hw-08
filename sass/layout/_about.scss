@@ -1,0 +1,54 @@
+.about {
+    display: none;
+}
+
+
+@media screen and (min-width: 1200px) {
+.about {
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+    &_description {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.666;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+
+    &_list {
+        display: flex;
+    }
+
+    &_list-item:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &_list-item {
+        position: relative;
+    }
+
+    &_list-information {
+        width: 370px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: var(--second-color);
+        margin: 0;
+        padding: 27px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    &_list-figure {
+        margin: 0;
+    }
+}
+}

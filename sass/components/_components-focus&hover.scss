@@ -1,0 +1,94 @@
+.navigation {
+
+    &_list-link:hover,
+    &_list-link:focus {
+        color: var(--third-color);
+        fill: #2196F3;
+    }
+}
+
+.footer {
+
+    &_contact-navigation:hover,
+    &_contact-navigation:focus {
+        color: var(--third-color);
+        fill: var(--third-color);
+    }
+}
+
+.footer {
+
+    &_contact-link:hover,
+    &_contact-link:focus {
+        color: var(--third-color);
+        fill: var(--third-color);
+    }
+}
+
+
+.contact {
+
+    &_link-item:hover,
+    &_link-item:focus,
+    &_link-item:hover > &_link-svg,
+    &_link-item:focus > &_link-svg {
+        color: var(--third-color);
+        fill: var(--third-color);
+    }
+}
+
+.ourteam {
+
+    &_list-link-svg:hover,
+    &_list-item-svg:focus {
+        background-color: var(--third-color);
+        fill: var(--second-color);
+    }
+}
+
+.footer {
+
+    &_contact-link-svg:hover,
+    &_contact-link-svg:focus {
+        background-color: var(--third-color);
+        fill: var(--second-color);
+    }
+}
+
+.ourclients {
+
+    &_list-link:hover,
+    &_list-link:focus {
+        border: 1px solid #2196F3;
+        fill: var(--third-color);
+    }
+}
+
+.button {
+
+    &_item-active:hover,
+    &_item-active:focus {
+        background-color: var(--third-color);
+        color: var(--second-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.modal {
+
+    &_div-input:focus,
+    &_input-text:focus {
+        border: 1px solid var(--third-color);
+        outline: none;
+    }
+
+    &_div-input:focus-within {
+        border: 1px solid #2196F3
+    }
+
+    &_div-input:focus+&_div-svg {
+        fill: var(--third-color);
+    }
+}

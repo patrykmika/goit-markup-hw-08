@@ -1,0 +1,201 @@
+.app {
+
+    &_item-figure {
+        margin: 0;
+    }
+
+    &_item-figure:first-child {
+        margin-top: 40px;
+    }
+
+    &_item {
+        margin-bottom: 30px;
+    }
+
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &_item-figure:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+
+    &_item-figcaption {
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+    }
+
+    &_item-main {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--main-color);
+        padding-left: 24px;
+        padding-top: 20px;
+    }
+
+    &_item-secondary {
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color: var(--fourth-color);
+        padding-left: 24px;
+    }
+
+    &_item-div {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    &_item-div:hover > &_item-description {
+        transform: translateY(0%);
+    }
+
+    
+    &_item-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 77px 24px;
+        background: rgba(33, 150, 243, 0.9);
+        height: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.555;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+        transform: translateY(100%);
+        transition: transform 250ms ease;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+.app {
+
+    &_list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &_item:nth-child(2n + 1) {
+        margin-right: 30px;
+    }
+
+     &_item-description {
+         padding: 49px 24px;
+     }
+}
+}
+
+@media screen and (min-width: 1200px) {
+.app {
+    &_item:nth-child(2n + 1) {
+        margin-right: 0;
+    }
+
+    &_list {
+        justify-content: space-between;
+    }
+
+     &_item-description {
+         padding: 49px 45px 49px 24px;
+     }
+}
+}
+
+
+
+
+
+// .app {
+//     &_list {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+
+//     &_item-figure {
+//         margin: 0;
+//     }
+
+//     &_item {
+//     margin-bottom: 30px;
+//     }
+
+//     &_item-figure:hover {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+//     0px 4px 4px rgba(0, 0, 0, 0.06),
+//     1px 4px 6px rgba(0, 0, 0, 0.16);
+//     cursor: pointer;
+//     }
+
+//     &_item:not(:nth-child(3n)) {
+//         margin-right: 30px;
+//     }
+
+//     &_item:last-child {
+//         margin-bottom: 94px;
+//     }
+
+//     &_item-figcaption {
+//         background: #FFFFFF;
+//         border: 1px solid #EEEEEE;
+//         box-sizing: border-box;
+//     }
+
+//     &_item-main {
+//         font-weight: 700;
+//         font-size: 18px;
+//         line-height: 2;
+//         letter-spacing: 0.06em;
+//         color: var(--main-color);
+//         padding-left: 24px;
+//         padding-top: 20px;
+//     }
+
+//     &_item-secondary {
+//         font-size: 16px;
+//         line-height: 1.875;
+//         letter-spacing: 0.03em;
+//         color: var(--fourth-color);
+//         padding-left: 24px;
+//     }
+
+//     &_item-div {
+//         position: relative;
+//         background-color: var(--third-color);
+//         margin: 0;
+//         overflow: hidden;
+//     }
+
+//     &_item-div:hover > &_item-description {
+//         transform: translateY(0%);
+//     }
+
+//     &_item-description {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         margin: 0;
+//         padding: 49px 45px 49px 24px;
+//         background: rgba(33, 150, 243, 0.9);
+//         height: 100%;
+//         font-weight: 400;
+//         font-size: 18px;
+//         line-height: 1.555;
+//         letter-spacing: 0.03em;
+//         color: var(--second-color);
+//         transform: translateY(100%);
+//         transition: transform 250ms ease;
+//     }
+// }
